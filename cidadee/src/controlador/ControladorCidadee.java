@@ -99,7 +99,7 @@ man.dispose();//fechar a tela da manutenção
             linha.add(objeto.getNome());
             linha.add(objeto.getSigla());
             linha.add(objeto.getHabitantes());
-            linha.add(objeto.getDia());
+            linha.add(objeto.getDia().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
             linha.add(objeto.getArea());
             linha.add(objeto.getDistancia());
             modelo.addRow(linha); //adicionando a linha na tabela

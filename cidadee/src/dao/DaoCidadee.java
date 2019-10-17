@@ -110,7 +110,7 @@ public class DaoCidadee {
     }
     public static Cidadee consultar(int primaryKey) {
         //editar o SQL conforme a entidade
-        String sql = "SELECT nome, sigla, habitantes, dia, area, distancia FROM cidadee WHERE codigo=?";
+        String sql = "SELECT codigo, nome, sigla, habitantes, dia, area, distancia FROM cidadee WHERE codigo=?";
         PreparedStatement ps;
         try {
             ps = conexao.Conexao.getConexao().prepareStatement(sql);
